@@ -68,7 +68,9 @@ app.post("", upload.none(), (req, res) => {
   // console.log(req.body.data.length);
   // let imgs = req.body.imgs.split(" ");
   // console.log(req.text);
+  console.log("data received")
   let imgs = req.body.data.split(" ");
+  console.log(imgs.length);
   var timeStamp = Date.now();
   var folder = "images/" + timeStamp;
   if (!fs.existsSync(resolve(folder))) {
@@ -107,7 +109,7 @@ app.post("", upload.none(), (req, res) => {
       noLog: true,
     })
       .inputOptions(`-start_number ${malformed}`)
-      .withFps(15)
+      .withFps(8)
 
       .on("error", function (err) {
         console.log("ERR: " + err.message);
@@ -187,6 +189,7 @@ function callApi(api, url, data) {
         reject(res.json());
       }
     } catch (e) {
+      console.log("data refused");
       reject(e);
     }
   });
