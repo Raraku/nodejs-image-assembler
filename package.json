@@ -1,5 +1,5 @@
 {
-  "name": "webrtcvideobroadcast",
+  "name": "imageassembler",
   "version": "1.0.0",
   "type": "module",
   "description": "WebRTC example for a video broadcast",
@@ -7,11 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "WebRTC",
-    "SocketIO"
-  ],
-  "author": "Tanner Gabriel",
+  "author": "Emotiva",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.1",

@@ -29,7 +29,6 @@ docker run -d -p 4000:4000 imageassembler
 ### Testing the application
 
 The application should now be running on your localhost:4000
-<<<<<<< HEAD
 
 After that, you just need to visit localhost:4000 to connect to the server as a client and you should get the video that is streamed from the broadcaster.
 
@@ -41,5 +40,3 @@ docker tag <image_name> registry.heroku.com/<project_name>
 docker push registry.heroku.com/<project_name>/web
 heroku container:release web -a <project_name>
 ```
-=======
->>>>>>> 11426ac87daa10a476aaa939a48c9c0c8a624948
